@@ -37,7 +37,7 @@ namespace WPFUI
 
             string name, cellphone, telephone;
 
-            //NOTE: What if there's an empty cell seperating two rows that contain info to be imported. The last row and the ones after that are ignored.
+            //NOTE: What if there's an empty cell separating two rows that contain info to be imported. The last row and the ones after that are ignored.
             //TODO: Find a better way to recognize when the actual last row is reached. (start from the ClosedXML docs)
             while (!contactRow.Cell(1).IsEmpty())
             {
