@@ -45,8 +45,8 @@ namespace WPFUI
                 cellphone = contactRow.Cell(2).GetString();
                 telephone = contactRow.Cell(3).GetString();
                 
-                //One cell might contain multiple telephone numbers seperated by a '-' character.
-                //In this case a duplicate contact is created for each seperate telephone number.
+                //One cell might contain multiple telephone numbers separated by a '-' character.
+                //In this case a duplicate contact is created for each separate telephone number.
                 //This isn't the best solution, but it works for now.
                 //TODO: Add multiple numbers support for each contact.
                 string[] s = telephone.Trim().Split("-");
